@@ -1,0 +1,43 @@
+.section-5 {
+  // position: relative;
+  margin-top: $spacer-middle;
+  height: 600px;
+  background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url('../images/campus.jpg');
+  background-position: center;
+  background-size: cover;
+
+  h1 {
+    color: white;
+    text-align: center;
+    margin-top: $spacer-small;
+    font-weight: bold;
+    transform: translateY(200%);
+  }
+
+  .units {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .unit {
+      height: 50px;
+      width: 120px;
+      margin: 15px 10px;
+      text-align: center;
+      color: $text-color;
+      font-weight: bold;
+      border-bottom: $text-color 1px dashed;
+      transition: 0.3s ease;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+        border-bottom: $theme-color 2px solid;
+      }
+    }
+  }
+
+}

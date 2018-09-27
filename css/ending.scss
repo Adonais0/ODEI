@@ -1,0 +1,54 @@
+.ending {
+  margin-top: $spacer-middle;
+
+  .flex-container {
+    margin-top: $spacer-middle;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      width: 300px;
+      padding: 0.8em 0;
+      display: inline-block;
+      border: none;
+      text-decoration: none;
+      background: $theme-color;
+      color: $text-color;
+      font-size: 1.2em;
+      font-weight: light;
+      cursor: pointer;
+      transition: 0.2s ease-out;
+      margin: 2em;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .quote {
+    margin-top: $spacer-middle;
+    color: $text-color;
+    display: flex;
+    span {
+      font-size:150px;
+      line-height:0.6em;
+      height: 20px;
+      opacity:0.5;
+    }
+
+    .quotes {
+      font-style: italic;
+      font-size: 1.2em;
+      font-weight: 200;
+
+      .mark {
+        float: right;
+      }
+    }
+  }
+}
+
+.end-quote {
+  margin: $spacer-middle 0;
+}

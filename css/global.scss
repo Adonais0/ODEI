@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+.empty {
+  height: 50vh;
+}
+
+.para {
+  font-size: 1.1em;
+  font-weight: normal;
+  line-height: 1.8em;
+}
+
+
+.big-number {
+  font-weight: bolder;
+  display: inline;
+  vertical-align: middle;
+  font-size: $large-title;
+}
+
+.vertical {
+  position: relative;
+  transform: rotate(-90deg);
+}
+
+body, html {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  margin: 0;
+  background-color: $secondary-color;
+}
+
+.section-content {
+  padding: 50px;
+}
+
+.section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.paragraph {
+  border-left: solid 8px $theme-color;
+  padding-left: 10px;
+}
+
+.title {
+  color: $text-color;
+  font-size: $small-title;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+footer {
+  img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+}

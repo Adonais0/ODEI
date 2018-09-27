@@ -1,0 +1,103 @@
+.section-7 {
+  margin-top: $spacer-large;
+  color: $text-color;
+  background-color: $secondary-color;
+
+  h1 {
+    color: $text-color;
+    font-size: $small-title;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .intro {
+    margin: $spacer-middle 0;
+  }
+
+  .slideshoww-container {
+    display: flex;
+
+    img {
+      z-index: 1;
+      height: 300px;
+    }
+
+    .content {
+      z-index: 1;
+      margin-left: 2em;
+
+      .initiatives {
+        .bold {
+          font-weight: bold;
+        }
+        .ini-title {
+          margin: 0;
+          font-size: 1.2em;
+          font-weight: bold;
+        }
+      }
+
+      .statement {
+        margin-left: 2em;
+        font-size: 1.2em;
+        font-weight: 200;
+        z-index: 0;
+
+        span {
+          font-size:150px;
+          line-height:0.6em;
+          height: 20px;
+          opacity:0.5;
+        }
+
+        .statement-content {
+          font-style: italic;
+          font-size: $text-content;
+          margin-top: 0;
+          font-weight: 200;
+        }
+        .mark {
+          float: right;
+        }
+      }
+    }
+
+    &::before {
+      content: "";
+      z-index: 0;
+      transform: translateY(-50px);
+      background-color: $theme-color;
+      position: absolute;
+      height: 550px;
+      width: 600px;
+      right: 15%;
+    }
+  }
+
+  .description {
+    color: $text-color;
+    margin-left: $spacer-small;
+
+    .title, .quote {
+      font-size: $middle-title;
+      font-weight: bolder;
+      margin: 0;
+    }
+
+    .quote {
+      height: 25px;
+      line-height: 50px;
+    }
+
+    .content {
+      margin: 0;
+      padding: 0 $spacer-small;
+    }
+
+    .people {
+      margin-top: $spacer-middle;
+      float: right;
+    }
+  }
+}

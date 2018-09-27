@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+.empty {
+  height: 50vh;
+}
+
+.para {
+  font-size: 1.1em;
+  font-weight: normal;
+  line-height: 1.8em;
+}
+
+.big-number {
+  font-weight: bolder;
+  display: inline;
+  vertical-align: middle;
+  font-size: 5em;
+}
+
+.vertical {
+  position: relative;
+  transform: rotate(-90deg);
+}
+
+body, html {
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+  margin: 0;
+  background-color: #002a5b;
+}
+
+.section-content {
+  padding: 50px;
+}
+
+.section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.paragraph {
+  border-left: solid 8px #e15e46;
+  padding-left: 10px;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+footer img {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.section-1 {
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../images/laugh.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-1 .header-content {
+  display: flex;
+  margin: 0 10%;
+  color: white;
+  position: relative;
+  top: 100px;
+  width: 750px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.section-1 .header-content img {
+  max-width: 200px;
+}
+.section-1 .header-content .content-container {
+  margin-left: 2em;
+}
+.section-1 .header-content .content-container .maintitle {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin: 0;
+}
+.section-1 .header-content .content-container .subtitle {
+  margin-top: 2em;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.2em;
+}
+.section-1 .header-content .content-container hr {
+  /* chrome */
+  border-color: rgba(255, 255, 255, 0.5);
+  opacity: 0.8 !important;
+}
+
+.section-2 {
+  margin-top: 100px;
+  position: relative;
+  color: #ffffff;
+}
+.section-2 .section-2-content {
+  display: flex;
+  padding: 2em 10px;
+}
+.section-2 .section-2-content img {
+  z-index: 1;
+  height: 300px;
+}
+.section-2 .section-2-content span {
+  font-size: 150px;
+  line-height: 0.6em;
+  height: 20px;
+  opacity: 0.5;
+}
+.section-2 .section-2-content .quotes {
+  font-style: italic;
+  font-size: 1.2em;
+  font-weight: 200;
+  z-index: 1;
+}
+.section-2 .section-2-content .quotes .quote-content {
+  transform: translateX(-20%);
+  font-size: 1em;
+  margin-top: 5em;
+  font-weight: 200;
+}
+.section-2 .section-2-content::before {
+  content: "";
+  z-index: 0;
+  transform: translate(-50px, -50px);
+  background-color: #e15e46;
+  position: absolute;
+  height: 400px;
+  width: 60%;
+}
+
+.section-3-description {
+  color: #ffffff;
+  margin-top: 10em;
+}
+.section-3-description blockquote {
+  color: #ffffff;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.section-4 {
+  height: auto;
+  background-color: #002a5b;
+  padding-bottom: 5em;
+}
+.section-4 .intro {
+  justify-content: center;
+  display: flex;
+  margin: 10em auto;
+  width: auto;
+}
+.section-4 .intro .intro-image {
+  z-index: 0;
+  width: 40%;
+  height: 380px;
+}
+.section-4 .intro .intro-content {
+  width: 500px;
+  padding: 2em;
+  color: #ffffff;
+  background-color: #e15e46;
+  border-left: 3px solid #e15e46;
+}
+.section-4 .section-3-info-1 {
+  margin-top: 10em;
+  height: inherit;
+}
+.section-4 .section-3-info-1 .title {
+  font-weight: bold;
+  font-size: 2em;
+  color: #ffffff;
+  text-align: center;
+}
+.section-4 .section-3-info-1 img {
+  width: 100%;
+  display: block;
+  margin: 5em auto;
+}
+
+.section-5 {
+  margin-top: 5em;
+  height: 600px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../images/campus.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.section-5 h1 {
+  color: white;
+  text-align: center;
+  margin-top: 2em;
+  font-weight: bold;
+  transform: translateY(200%);
+}
+.section-5 .units {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section-5 .units .unit {
+  height: 50px;
+  width: 120px;
+  margin: 15px 10px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  border-bottom: #ffffff 1px dashed;
+  transition: 0.3s ease;
+}
+.section-5 .units .unit:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  border-bottom: #e15e46 2px solid;
+}
+
+.section-6 {
+  height: auto;
+  margin-top: 5em;
+}
+.section-6 .title {
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+.section-6 img {
+  max-width: 60%;
+  max-height: 380px;
+  margin-top: 5em;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+.section-6 .content {
+  width: 100%;
+  height: inherit;
+  display: flex;
+}
+
+.section-7 {
+  margin-top: 10em;
+  color: #ffffff;
+  background-color: #002a5b;
+}
+.section-7 h1 {
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+.section-7 .intro {
+  margin: 5em 0;
+}
+.section-7 .slideshoww-container {
+  display: flex;
+}
+.section-7 .slideshoww-container img {
+  z-index: 1;
+  height: 300px;
+}
+.section-7 .slideshoww-container .content {
+  z-index: 1;
+  margin-left: 2em;
+}
+.section-7 .slideshoww-container .content .initiatives .bold {
+  font-weight: bold;
+}
+.section-7 .slideshoww-container .content .initiatives .ini-title {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.section-7 .slideshoww-container .content .statement {
+  margin-left: 2em;
+  font-size: 1.2em;
+  font-weight: 200;
+  z-index: 0;
+}
+.section-7 .slideshoww-container .content .statement span {
+  font-size: 150px;
+  line-height: 0.6em;
+  height: 20px;
+  opacity: 0.5;
+}
+.section-7 .slideshoww-container .content .statement .statement-content {
+  font-style: italic;
+  font-size: 1em;
+  margin-top: 0;
+  font-weight: 200;
+}
+.section-7 .slideshoww-container .content .statement .mark {
+  float: right;
+}
+.section-7 .slideshoww-container::before {
+  content: "";
+  z-index: 0;
+  transform: translateY(-50px);
+  background-color: #e15e46;
+  position: absolute;
+  height: 550px;
+  width: 600px;
+  right: 15%;
+}
+.section-7 .description {
+  color: #ffffff;
+  margin-left: 2em;
+}
+.section-7 .description .title, .section-7 .description .quote {
+  font-size: 3em;
+  font-weight: bolder;
+  margin: 0;
+}
+.section-7 .description .quote {
+  height: 25px;
+  line-height: 50px;
+}
+.section-7 .description .content {
+  margin: 0;
+  padding: 0 2em;
+}
+.section-7 .description .people {
+  margin-top: 5em;
+  float: right;
+}
+
+.section-8 {
+  margin-top: 10em;
+  height: auto;
+  padding-bottom: 2em;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("../images/future.png");
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  padding-top: 5em;
+}
+.section-8 .flex-container {
+  display: flex;
+  max-width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+}
+.section-8 .content {
+  max-width: 50%;
+  padding: 0 10px;
+}
+.section-8 iframe {
+  margin-top: 5em;
+  border-style: solid;
+  border: 10px #e15e46 solid;
+}
+
+.ending {
+  margin-top: 5em;
+}
+.ending .flex-container {
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-between;
+}
+.ending .flex-container button {
+  width: 300px;
+  padding: 0.8em 0;
+  display: inline-block;
+  border: none;
+  text-decoration: none;
+  background: #e15e46;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: light;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  margin: 2em;
+}
+.ending .flex-container button:hover {
+  opacity: 0.8;
+}
+.ending .quote {
+  margin-top: 5em;
+  color: #ffffff;
+  display: flex;
+}
+.ending .quote span {
+  font-size: 150px;
+  line-height: 0.6em;
+  height: 20px;
+  opacity: 0.5;
+}
+.ending .quote .quotes {
+  font-style: italic;
+  font-size: 1.2em;
+  font-weight: 200;
+}
+.ending .quote .quotes .mark {
+  float: right;
+}
+
+.end-quote {
+  margin: 5em 0;
+}
+
+/*# sourceMappingURL=style.css.map */

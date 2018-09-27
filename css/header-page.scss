@@ -1,0 +1,55 @@
+.section-1 {
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../images/laugh.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .header-content {
+    display: flex;
+    margin: 0 10%;
+    color: white;
+    position: relative;
+    top: 100px;
+    width: 750px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    img {
+      max-width: 200px;
+    }
+
+    .content-container {
+      margin-left: $spacer-small;
+
+      .maintitle {
+        text-align: center;
+        font-size: $small-title;
+        font-weight: 700;
+        line-height: 1.2em;
+        margin: 0;
+      }
+
+      .subtitle {
+        margin-top: $spacer-small;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 1.2em;
+
+        span {
+          // text-decoration: underline;
+          // text-decoration-color: $theme-color;
+        }
+      }
+
+      hr {
+        /* chrome */
+        border-color: rgba(255, 255, 255, 0.5);
+        opacity: 0.8 !important;
+        }
+    }
+  }
+}
