@@ -9,12 +9,16 @@ var unitGroup = document.getElementById('unit-group');
 
 for (var i = 0; i < 15; i ++) {
   var li = document.createElement('div');
+  var p = document.createElement('p');
+
   li.classList.add('unit');
-  li.innerHTML = unitList[i];
+  p.innerHTML = unitList[i];
+  li.appendChild(p);
   unitGroup.appendChild(li);
-  if (unitList[i].length > 20) {
-    console.log(unitList[i]);
-    li.style.fontSize = '70%';
-    li.lineHight = '100%';
-  }
+
+  // if (unitList[i].length > 20) {
+  //   console.log(unitList[i]);
+  //   li.style.fontSize = '100%';
+  //   li.lineHight = '100%';
+  // }
 }

@@ -10,7 +10,6 @@
   line-height: 1.8em;
 }
 
-
 .big-number {
   font-weight: bolder;
   display: inline;
@@ -27,7 +26,7 @@ body, html {
   font-family: 'Open Sans', sans-serif;
   height: 100%;
   margin: 0;
-  background-color: $secondary-color;
+  background-color: $background-color;
 }
 
 .section-content {
@@ -53,8 +52,11 @@ body, html {
 }
 
 footer {
+  padding: $spacer-small 0;
+  background-color: $background-color;
   img {
-    width: 200px;
+    margin-top: $spacer-small;
+    width: 100px;
     display: block;
     margin: 0 auto;
   }

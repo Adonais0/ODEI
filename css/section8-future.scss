@@ -1,28 +1,39 @@
 .section-8 {
   margin-top: $spacer-large;
   height: auto;
-  padding-bottom: $spacer-small;
-  background: linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url('../images/future.png');
+  background-image: url('../images/future.png');
   background-position: center;
   background-size: cover;
-  color: $text-color;
-  padding-top: $spacer-middle;
+  color: $secondary-text-color;
 
-  .flex-container {
-    display: flex;
-    max-width: 80%;
-    justify-content: center;
-    margin: 0 auto;
-  }
+  .section-container {
+    background-color: $overlay;
+    padding: $spacer-middle 0;
 
-  .content {
-    max-width: 50%;
-    padding: 0 10px;
-  }
+    .title {
+      color: $secondary-text-color;
+    }
 
-  iframe {
-    margin-top: $spacer-middle;
-    border-style: solid;
-    border: 10px $theme-color solid;
+    .flex-container {
+      flex-wrap: wrap;
+      display: flex;
+      max-width: 80%;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    .content {
+      max-width: 50%;
+      padding: 0 10px;
+    }
+
+    iframe {
+      max-width: 600px;
+      width: 560px;
+      max-height: 315px;
+      margin-top: $spacer-middle;
+      border-style: solid;
+      border: 10px $highlight-color solid;
+    }
   }
 }

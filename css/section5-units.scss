@@ -1,43 +1,53 @@
 .section-5 {
-  // position: relative;
-  margin-top: $spacer-middle;
-  height: 600px;
-  background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url('../images/campus.jpg');
+  height: auto;
+  background-image: url('../images/campus.jpg');
   background-position: center;
   background-size: cover;
 
-  h1 {
-    color: white;
-    text-align: center;
-    margin-top: $spacer-small;
-    font-weight: bold;
-    transform: translateY(200%);
-  }
+  .content {
+    padding: $spacer-middle 0;
+    background-color: $overlay;
+    width: 60%;
+    margin: 0 auto;
 
-  .units {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    .unit {
-      height: 50px;
-      width: 120px;
-      margin: 15px 10px;
+    h1 {
+      margin: 0;
+      color: white;
       text-align: center;
-      color: $text-color;
       font-weight: bold;
-      border-bottom: $text-color 1px dashed;
-      transition: 0.3s ease;
+    }
 
-      &:hover {
-        cursor: pointer;
-        opacity: 0.8;
-        border-bottom: $theme-color 2px solid;
+    .units {
+      padding: $spacer-small 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .unit {
+        height: auto;
+        width: 140px;
+        min-width: 50px;
+        height: 120px;
+        margin: 5px 10px;
+        padding: 10px;
+        text-align: center;
+        color: $secondary-text-color;
+        font-weight: bold;
+        transition: 0.3s ease;
+        border: 0.5px solid $secondary-text-color;
+
+        p {
+          position: relative;
+          top: 30%;
+          transform: translateY(-50%);
+        }
+        &:hover {
+          cursor: pointer;
+          color: $text-color;
+          border: 0.5px solid transparent;
+          background-color: $highlight-color;
+        }
       }
     }
   }
-
 }

@@ -1,11 +1,23 @@
 // color
+
+// maze & blue
 // $theme-color: #ffcb05;
 // $secondary-color: #00274c;
-$theme-color: #e15e46;
-$secondary-color: #002a5b;
-$text-color: #ffffff;
-$highlight-color: #ffcb05;
 
+/* orange & blue */
+// $theme-color: #e15e46;
+// $secondary-color: #002a5b;
+// $text-color: #ffffff;
+
+/* light background */
+$theme-color: #e1464c;
+$secondary-color: #143747;
+$text-color: #143747;
+$secondary-text-color: #ffffff;
+$highlight-color: #fce961;
+$background-color: #f2f2f2;
+$overlay: rgba(20,55,71,0.8);
+$card-color: #ffffff;
 // font
 $large-title: 5em;
 $middle-title: 3em;

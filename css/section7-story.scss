@@ -1,7 +1,6 @@
 .section-7 {
   margin-top: $spacer-large;
   color: $text-color;
-  background-color: $secondary-color;
 
   h1 {
     color: $text-color;
@@ -11,6 +10,10 @@
     text-align: center;
   }
 
+  .active, .dot:hover {
+  background-color: #717171;
+}
+
   .intro {
     margin: $spacer-middle 0;
   }
@@ -18,22 +21,116 @@
   .slideshoww-container {
     display: flex;
 
-    img {
-      z-index: 1;
-      height: 300px;
+    .photo-container {
+      z-index: 5;
+      width: fit-content;
+
+      .mini-photo {
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+
+        .mini {
+          float: left;
+          margin: 0.2em;
+          width: 50px;
+          height: 50px;
+          display: inline-block;
+          transition: 0.3s ease;
+
+          &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+          }
+        }
+
+        .mini_active {
+          border: 3px solid $highlight-color;
+        }
+      }
     }
+
+  .mySlides {
+    display: none;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    color: $secondary-color;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    transform: translateY(-350%);
+    background-color: $highlight-color;
+    border-radius: 100%;
+    text-align: center;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    margin-right: 1em;
+    float: right;
+  }
+
+  .prev {
+    margin-left: 1em;
+    float: left;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    opacity: 0.8;
+  }
+
+    /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  img {
+    z-index: 5;
+    height: 300px;
+    width: 480px;
+  }
 
     .content {
       z-index: 1;
-      margin-left: 2em;
+      margin-left: 1.5em;
 
       .initiatives {
+        height: 250px;
+
         .bold {
           font-weight: bold;
         }
-        .ini-title {
+
+        .ini-content {
+          display: none;
           margin: 0;
-          font-size: 1.2em;
+        }
+        .ini-title {
+          display: none;
+          margin: 0;
+          font-size: 1.5em;
+          margin: 0;
           font-weight: bold;
         }
       }
@@ -67,10 +164,11 @@
       content: "";
       z-index: 0;
       transform: translateY(-50px);
-      background-color: $theme-color;
+      background-color: $card-color;
+      box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
       position: absolute;
       height: 500px;
-      width: 600px;
+      width: 500px;
       right: 15%;
     }
   }

@@ -1,54 +1,90 @@
 .ending {
-  margin-top: $spacer-middle;
+  background-color: $theme-color;
+  padding: $spacer-middle 0;
 
-  .flex-container {
-    margin-top: $spacer-middle;
-    display: flex;
-    justify-content: space-between;
+  .title {
+    margin: 0;
+    color: $secondary-text-color;
+  }
 
-    button {
-      width: 300px;
-      padding: 0.8em 0;
-      display: inline-block;
-      border: none;
-      text-decoration: none;
-      background: $theme-color;
-      color: $text-color;
-      font-size: 1.2em;
-      font-weight: light;
-      cursor: pointer;
-      transition: 0.2s ease-out;
-      margin: 2em;
+  .container {
+    margin: 0 auto;
+    width: 80%;
 
-      &:hover {
-        opacity: 0.8;
+    .flex-container {
+      display: flex;
+      justify-content: center;
+
+      button {
+        border-radius: 30px;
+        width: 350px;
+        padding: 0.8em 0.5em;
+        display: inline-block;
+        border: none;
+        text-decoration: none;
+        background-color: $secondary-text-color;
+        color: $text-color;
+        font-size: 1.1em;
+        font-weight: light;
+        cursor: pointer;
+        transition: 0.2s ease-out;
+        margin: 2em;
+
+        .right {
+          margin-left: 1.1em;
+        }
+
+        .left {
+          margin-right: 1.1em;
+        }
+
+        i {
+          transition: 0.2s ease-out;
+        }
+
+        &:hover {
+          background-color: $highlight-color;
+
+          .right {
+            margin-left: 1.5em;
+          }
+
+          .left {
+            margin-right: 1.5em;
+          }
+        }
+      }
+    }
+
+    .quote {
+      margin-top: $spacer-middle;
+      color: $secondary-text-color;
+      display: flex;
+
+      span {
+        font-size:150px;
+        line-height:0.6em;
+        height: 20px;
+        opacity:0.5;
+      }
+      .quotes {
+        font-style: italic;
+        font-size: 1.3em;
+        font-weight: 300;
+
+        .mark {
+          float: right;
+        }
       }
     }
   }
 
-  .quote {
-    margin-top: $spacer-middle;
-    color: $text-color;
-    display: flex;
-    span {
-      font-size:150px;
-      line-height:0.6em;
-      height: 20px;
-      opacity:0.5;
-    }
-
-    .quotes {
-      font-style: italic;
-      font-size: 1.2em;
-      font-weight: 200;
-
-      .mark {
-        float: right;
-      }
-    }
-  }
 }
 
 .end-quote {
-  margin: $spacer-middle 0;
+  height: 100px;
+  background-color: $background-color;
+  padding-top: $spacer-small;
+  color: $text-color;
+  margin: 0;
 }

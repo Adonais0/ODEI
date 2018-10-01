@@ -1,24 +1,15 @@
 .section-6 {
   height: auto;
   margin-top: $spacer-middle;
+
   .title {
-    // position: absolute;
     color: $text-color;
     font-size: $small-title;
     font-weight: bold;
     margin-top: 10px;
     text-align: center;
-
-    // p {
-    //   margin: 0;
-    // }
   }
   img {
-    // position: relative;
-    // top: 50%;
-    // transform: translateY(-40%);
-    // margin-left: 50px;
-    // max-height:
     max-width: 60%;
     max-height: 380px;
     margin-top: $spacer-middle;
@@ -32,24 +23,5 @@
     height: inherit;
     display: flex;
 
-    // .left {
-    //   background-color: #465d85;
-    //   width: 400px;
-    //   height: auto;
-    //   padding: 200px 50px 0 50px;
-    //   color: $text-color;
-    // }
-
-    // .right {
-    //   width: 100%;
-    //   height: auto;
-    //   margin: 0 auto;
-    //   display: block;
-    //   // padding: 50px;
-    //
-    //
-    // }
   }
-
-
 }

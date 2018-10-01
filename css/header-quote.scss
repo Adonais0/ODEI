@@ -13,10 +13,11 @@
     }
 
     span {
+      color: $highlight-color;
       font-size:150px;
       line-height:0.6em;
       height: 20px;
-      opacity:0.5;
+      opacity: 0.99;
     }
 
     .quotes {
@@ -24,8 +25,8 @@
       font-size: 1.2em;
       font-weight: 200;
       z-index: 1;
-      .quote-content {
 
+      .quote-content {
         transform: translateX(-20%);
         font-size: $text-content;
         margin-top: $spacer-middle;
@@ -40,7 +41,8 @@
       content: "";
       z-index: 0;
       transform: translate(-50px, -50px);
-      background-color: $theme-color;
+      background-color: $card-color;
+      box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
       position: absolute;
       height: 400px;
       width: 60%;
