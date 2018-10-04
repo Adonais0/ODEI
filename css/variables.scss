@@ -10,14 +10,41 @@
 // $text-color: #ffffff;
 
 /* light background */
-$theme-color: #e1464c;
-$secondary-color: #143747;
-$text-color: #143747;
-$secondary-text-color: #ffffff;
-$highlight-color: #fce961;
-$background-color: #f2f2f2;
-$overlay: rgba(20,55,71,0.8);
-$card-color: #ffffff;
+// $theme-color: #e1464c;
+// $secondary-color: #143747;
+// $text-color: #143747;
+// $secondary-text-color: #ffffff;
+// $highlight-color: #fce961;
+// $background-color: #f2f2f2;
+// $overlay: rgba(20,55,71,0.8);
+// $card-color: #ffffff;
+
+/* dark background */
+// $theme-color: #ff2e4c;
+// $secondary-color: #ff2e4c;
+// $text-color: #dfdfdf;
+// $secondary-text-color: #1e1548;
+// $highlight-color: #fcd77f;
+// $background-color: #1e1548;
+// $overlay: rgba(30,21,72,0.8);
+// $white-overlay: rgba(255,255,255,0.8);
+// $card-color: #e15e46;
+//  // #da8139
+//  // #4eaeaf
+// $light-blue: #2e99b0;
+
+/* new theme */
+$theme-color: #d98139;
+$secondary-color: #d98139;
+$text-color: #dfdfdf;
+$secondary-text-color: #1e1548;
+$highlight-color: #fcd77f;
+$background-color: #1e1548;
+$overlay: rgba(30,21,72,0.8);
+$white-overlay: rgba(255,255,255,0.8);
+$card-color: #d98139;
+$light-blue: #2e99b0;
+
 // font
 $large-title: 5em;
 $middle-title: 3em;

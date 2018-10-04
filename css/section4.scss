@@ -1,6 +1,6 @@
 .section-4 {
   height: auto;
-  background-color: #fff;
+  // background-color: #fff;
   padding-bottom: $spacer-middle;
 
   .intro {
@@ -14,14 +14,17 @@
     background-size: cover;
 
     .intro-content {
-      // position: relative;
-      // top: 50%;
-      // transform: translateY(-50%);
       text-align: center;
       width: 50%;
       padding: $spacer-small;
-      color: $secondary-text-color;
+      color: $text-color;
       background-color: $overlay;
+
+      .para {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
   }
 
@@ -34,8 +37,9 @@
       color: $text-color;
       text-align: center;
     }
+
     img {
-      transform: translateX(10%);
+      transform: translateX(8%);
       width: 100%;
       display: block;
       margin: 0 auto;
