@@ -4,15 +4,6 @@
 
 }
 
-.ball {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  background-color: $highlight-color;
-  border-radius: 50%;
-  z-index: -1;
-  transform: translate(-50%,-30%);
-}
 .section-3-description {
   z-index: 0;
   color: $text-color;
@@ -22,5 +13,17 @@
     color: $text-color;
     font-size: 1.3em;
     font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-3 {
+    margin-top: $spacer-small;
+    font-size: $text-mobile;
+    width: 80%;
+
+    .section-3-description {
+      margin-top: $spacer-small;
+    }
   }
 }

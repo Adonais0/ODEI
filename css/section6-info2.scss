@@ -10,7 +10,6 @@
     text-align: center;
   }
   img {
-    max-width: 60%;
     max-height: 380px;
     margin-top: $spacer-middle;
     display: block;
@@ -18,10 +17,116 @@
     margin-top: $spacer-small;
   }
 
+  .mobile {
+    display: none;
+  }
+
   .content {
     width: 100%;
     height: inherit;
     display: flex;
 
+    .prev-image {
+      margin-top: $spacer-small;
+
+      .number-1 {
+        color: $text-color;
+        display: flex;
+        position: relative;
+
+        .counting {
+          font-size: 4em;
+          font-weight: bold;
+          background-color: $card-color;
+          width: 140px;
+        }
+
+        .description {
+          font-size: 1.5em;
+          font-weight: bold;
+          width: 350px;
+          position: absolute;
+          transform: rotate(-90deg) translate(-40%, -200%);
+          transform-origin: center;
+        }
+      }
+    }
+
+    .after-image {
+      margin-top: $spacer-small;
+      padding-top: $spacer-large;
+
+      .number-2 {
+        color: $text-color;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: $card-color;
+        width: 150px;
+
+        .counting {
+          margin-bottom: 0;
+          font-size: 4em;
+          font-weight: bold;
+          width: 140px;
+        }
+
+        .description {
+          margin: 0;
+          font-size: 1.5em;
+          font-weight: bold;
+          width: 350px;
+        }
+      }
+
+      .legend {
+        height: 100px;
+        margin-top: $spacer-small;
+        color: $text-color;
+        font-weight: bold;
+
+        .in-progress {
+          border-left: $secondary-color 50px solid;
+          padding-left: 2em;
+        }
+
+        .implemented {
+          border-left: $theme-color 50px solid;
+          margin-top: 1em;
+          padding-left: 2em;
+        }
+      }
+    }
+  }
+
+  .action-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: $spacer-middle;
+    width: 300px;
+    outline: none;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .section-6 {
+    font-size: $text-mobile;
+    width: 100%;
+
+    .title {
+      font-size: $small-title;
+    }
+
+    .mobile {
+      display: block;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .content {
+      display: none;
+    }
   }
 }

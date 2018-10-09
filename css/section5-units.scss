@@ -1,67 +1,59 @@
+@import './slideShow';
+
 .section-5 {
   height: auto;
   background-image: url('../images/campus.jpg');
   background-position: center;
   background-size: cover;
-
   .content {
-    text-align: center;
-    padding: $spacer-middle 0;
-    background-color: $overlay;
-    width: 60%;
-    margin: 0 auto;
-    height: 100%;
 
     h1 {
       margin: 0;
       color: white;
       text-align: center;
       font-weight: bold;
+      background-color: $overlay;
+      width: 40%;
+      margin: 0 auto;
+      display: block;
     }
+
+
+    text-align: center;
+    padding: $spacer-middle 0;
+    width: 100%;
+    margin: 0 auto;
+    height: 60%;
+    overflow: visible;
 
     .units {
       padding: $spacer-small 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      width: fit-content;
 
       .unit {
-        height: 100%;
+        background-color: $overlay;
+        height: auto;
         width: 140px;
         min-width: 50px;
-
-        height: 100px;
-        // height: 120px;
+        height: 120px;
         margin: 5px 10px;
-
-        padding: 10px;
+        padding: 0;
         text-align: center;
         color: $text-color;
         font-weight: bold;
         transition: 0.3s ease;
-
-        border-bottom: 0.5px solid $text-color;
-        // border-top: 0.5px solid $text-color;
-        // border: 0.5px solid $text-color;
-
         p {
           position: relative;
-          top: 30%;
+          top: 50%;
           transform: translateY(-50%);
         }
-
-        // &:hover {
-        //   cursor: pointer;
-        //   color: $secondary-text-color;
-        //   border: 0.5px solid transparent;
-        //   background-color: $secondary-color;
-        // }
       }
     }
   }
 }
 
 button {
+  outline: none;
   border-radius: 30px;
   width: 250px;
   padding: 0.8em 0.5em;
@@ -70,7 +62,7 @@ button {
   border: none;
   text-decoration: none;
   background-color: $secondary-color;
-  color: $text-color;
+  color: $secondary-text-color;
   font-size: 1.1em;
   font-weight: light;
   cursor: pointer;
@@ -102,9 +94,12 @@ button {
   }
 }
 
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-    .parallax {
-        background-attachment: scroll;
+@media screen and (max-width: 600px) {
+  .section-5 {
+    font-size: $text-mobile;
+
+    h1 {
+      font-size: $small-title;
     }
+  }
 }

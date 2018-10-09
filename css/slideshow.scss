@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.scroll-window {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  #scroll-container {
+    height: 100%;
+    width: 4800px;
+    position: absolute;
+    left: 0;
+    transform: translate3d(0,0,0);
+    display: flex;
+    justify-content: flex-start;
+    animation: moveSlideshow 26s linear infinite;
+
+    .group-0,.group-1,.group-2,.group-3,.group-4 {
+      height: 120%;
+      width: fit-content;
+
+      .subgroup-0,.subgroup-1,.subgroup-2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+/* keyframes*/
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-60%);
+  }
+}

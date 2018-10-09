@@ -38,18 +38,25 @@
         text-align: center;
         font-weight: lighter;
         font-size: 1.2em;
-
-        span {
-          // text-decoration: underline;
-          // text-decoration-color: $theme-color;
-        }
       }
 
       hr {
         /* chrome */
         border-color: rgba(255, 255, 255, 0.5);
         opacity: 0.8 !important;
-        }
+      }
     }
   }
+}
+
+@media screen and (max-width: 600px) {
+
+    .section-1 {
+      .header-content {
+        width: 100%;
+        img {
+          display: none;
+        }
+      }
+    }
 }

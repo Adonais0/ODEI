@@ -1,6 +1,5 @@
 .section-4 {
   height: auto;
-  // background-color: #fff;
   padding-bottom: $spacer-middle;
 
   .intro {
@@ -12,10 +11,14 @@
     background-image: url('../images/faculty.png');
     background-position: center;
     background-size: cover;
+    position: relative;
 
     .intro-content {
       text-align: center;
-      width: 50%;
+      position: absolute;
+      width: 80%;
+      height: 30%;
+      bottom: $spacer-small;
       padding: $spacer-small;
       color: $text-color;
       background-color: $overlay;
@@ -43,6 +46,21 @@
       width: 100%;
       display: block;
       margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-4 {
+    margin-top: $spacer-small;
+    font-size: $text-mobile;
+
+    .intro {
+      margin-top: $spacer-small;
+
+      .intro-content {
+        height: 60%;
+      }
     }
   }
 }

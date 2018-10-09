@@ -43,8 +43,6 @@
         }
 
         &:hover {
-          background-color: $highlight-color;
-          color: $secondary-text-color;
           .right {
             margin-left: 1.5em;
           }
@@ -87,4 +85,38 @@
   padding-top: $spacer-small;
   color: $text-color;
   margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .ending {
+    .container {
+      font-size: $text-mobile;
+
+      .quote {
+        span {
+          display: none;
+        }
+      }
+
+      .flex-container {
+        margin: 0 auto;
+        flex-direction: column;
+
+        button {
+          width: 85%;
+          margin: 1em;
+
+          &:hover {
+            .right {
+              margin-left: 1.5em;
+            }
+
+            .left {
+              margin-right: 1.5em;
+            }
+          }
+        }
+      }
+    }
+  }
 }

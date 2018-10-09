@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="./js/index.js"></script>
 
   </head>
   <body>
@@ -43,10 +42,10 @@
       <!-- <div class="ball"> -->
       <!-- </div> -->
       <div class="section-3-description section">
-        <p class="para">In September of 2015, as one of his first official acts as president, Mark Schlissel announced that creating a more diverse, equitable and inclusive campus would be among his top priorities. Then he issued an audacious challenge to the entire U-M community:</p> <blockquote class="paragraph" cite="http://">
+        <p class="para fade">In September of 2015, as one of his first official acts as president, Mark Schlissel announced that creating a more diverse, equitable and inclusive campus would be among his top priorities. Then he issued an audacious challenge to the entire U-M community:</p><blockquote class="paragraph fade" cite="http://">
           Develop and implement the university’s first five-year diversity, equity and inclusion strategic plan.
         </blockquote>
-        <p class="para">
+        <p class="para fade">
           Given Michigan’s vast size and scope, this would be one of the largest, most ambitious and challenging endeavors of its kind in the nation. To ensure both progress and transparency, all participating units would generate an annual report on their initiatives, goals, outcomes, achievements, and challenges.</p>
       </div>
     </div>
@@ -54,50 +53,70 @@
     <div class="section-4">
 
       <div class="intro">
-        <div class="intro-content">
+        <div class="intro-content fade">
           <p class="para">We have now completed two years of implementation as a campus and are heading into Year Three of the 5 year DEI Plan. Fifty-one individual campus units - including Michigan Medicine and all 19 U-M schools and colleges - have  DEI Plans. These plans include over 2,000 individual action items in addition to 34 Central University Action Items, each keyed to one of three overarching strategies and touching on virtually every aspect of campus life.
           </p>
         </div>
       </div>
 
       <div class="section-3-info-1 section">
-        <h1 class="title">The UM Strategic Plan in Action</h1>
-        <img src="./images/info-1-new.png" alt="">
+        <h1 class="title fade">The UM Strategic Plan in Action</h1>
+        <img src="./images/info1-yellow.png" class="fade" alt="">
       </div>
     </div>
 
-    <div class="section-5 parallax">
-      <div class="content">
-        <h1>List of U-M Units with DEI Plans</h1>
-        <section>
+    <div class="section-5">
 
-        </section>
-        <div class="units section" id="unit-group"></div>
-        <button class="unit-link" type="button" name="button">Full Unit Action List<i class="fas fa-arrow-right right"></i></button>
+      <div class="content">
+          <h1 class="fade">UM Units with DEI Plans</h1>
+        <div class="scroll-window">
+          <div id="scroll-container"></div>
+        </div>
+        <button class="unit-link" type="button" name="button">Year 3 Revised DEI Plans<i class="fas fa-arrow-right right"></i></button>
       </div>
     </div>
 
     <div class="section-6">
-      <div class="title">
-        <p>U-M DEI Actions Started and Completed in 2017-2018</p>
+      <div class="title fade">
+        <p>UM DEI Actions - Status Update</p>
       </div>
-      <div class="content">
-          <img src="./images/info-2-new.png" alt="">
+      <div class="mobile">
+        <img src="./images/info-2-blue.png" alt="">
       </div>
+      <div class="content fade section">
+        <div class="prev-image">
+          <div class="number-1">
+            <p class="counting" data-count="34">0</p>
+            <p class="description">central university actions</p>
+          </div>
+        </div>
+        <img src="./images/info-2-blue.png" alt="">
+        <div class="after-image">
+          <div class="number-2">
+            <p class="counting" data-count="2177">0</p>
+            <p class="description">campus visit actions</p>
+          </div>
+          <div class="legend">
+            <p class="in-progress">In Progress</p>
+            <p class="implemented">Implemented</p>
+          </div>
+        </div>
+      </div>
+      <button class="action-button" type="button" name="button">List of Unit Actions & Status<i class="fas fa-arrow-right right"></i></button>
     </div>
 
     <div class="section-7 section">
-      <h1>Progress Highlights</h1>
+      <h1 class="fade">Progress Highlights</h1>
 
-      <p class="intro para">Year Two in our DEI Plan implementation was a time of intense action, engagement and assessment. We continued to embed DEI in the structures and processes of the university.  As we start Year Three, we are starting to see the impact these efforts on students, staff and faculty. </p>
+      <p class="intro para fade">Year Two in our DEI Plan implementation was a time of intense action, engagement and assessment. We continued to embed DEI in the structures and processes of the university.  As we start Year Three, we are starting to see the impact these efforts on students, staff and faculty. Below are just a handful of the multitude of university and unit initiatives underway to move us forward on our DEI goals and objectives. </p>
 
-      <div class="slideshoww-container">
+      <div class="slideshow-container fade">
         <div class="photo-container">
-          <img class="mySlides fade" src="./images/ini-1.png" alt="student image">
-          <img class="mySlides fade" src="./images/ini-2.png" alt="student image">
-          <img class="mySlides fade" src="./images/ini-3.png" alt="student image">
-          <img class="mySlides fade" src="./images/ini-4.png" alt="student image">
-          <img class="mySlides fade" src="./images/ini-5.png" alt="student image">
+          <img class="mySlides" src="./images/ini-1.png" alt="student image">
+          <img class="mySlides" src="./images/ini-2.png" alt="student image">
+          <img class="mySlides" src="./images/ini-3.png" alt="student image">
+          <img class="mySlides" src="./images/ini-4.png" alt="student image">
+          <img class="mySlides" src="./images/ini-5.png" alt="student image">
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
           <div class="mini-photo">
@@ -120,7 +139,7 @@
               <p class="ini-content">The Go Blue Guarantee makes a U-M education more affordable for Michigan residents. Students whose family income is under $65,000 receive full tuition and fees for 4 years and often receive additional aid for housing and books.</p>
               <p class="ini-content">The Center for Research on Learning and Teaching (CRLT) has expanded its professional development programs to support faculty at all levels in building skills and curricula to support an inclusive learning environment that meets the needs of our diverse student body.</p>
               <p class="ini-content">The Intercultural Development Inventory, a tool to assess skills and capacity for bridging cultural differences, offered intercultural training and learning plans to hundreds of students, as well as faculty and staff.</p>
-              <p class="ini-content">SuccessConnects is a holistic support program focused on enhancing students academic, social, cultural and personal development; offering coaching, peer-mentoring, workshops and resources to foster success, in particular for first-generation college students.</p>
+              <p class="ini-content">SuccessConnects is a holistic support program designed to enhance students' academic, social, cultural and personal development. While open to all students, the program offers coaching, peer-mentoring, workshops and resources to support the success of first generation students, underrepresented minorities and scholarship recipients in particular.</p>
             </div>
             <hr>
             <div class="statement">
@@ -136,9 +155,9 @@
               <p class="statement-content"> “It forced me to critically think about how I engage with diversity issues and what about my own life and identities may be affecting those things, positively or negatively.”
               </p>
               <p class="people">--Student Participant</p>
-              <p class="statement-content"> TBA
+              <p class="statement-content"> "Everyone was welcoming, and it's good to know I'm not alone...This program has eased some of my anxiety about school."
               </p>
-              <p class="people">--Student Recipient</p>
+              <p class="people">--Student Particepant</p>
             </div>
           </div>
       </div>
@@ -146,9 +165,9 @@
 
     <div class="section-8">
       <div class="section-container">
-        <h1 class="title">Positive Change, Persistent Challenge</h1>
+        <h1 class="title fade">Positive Change, Persistent Challenge</h1>
         <div class="flex-container para">
-          <div class="content">
+          <div class="content fade">
             <p>There is much evidence to support that DEI is now an integral part of this institution. Significant change is occurring at fundamental levels, with the potential for cascading effects. These changes cannot easily be undone. Yet despite our achievements, this past year was marked by ugly incidents on campus and in our broader society, and our efforts to eradicate bias and support equity are ongoing and imperative. </p>
             <p>As a result, we are confronted with dual realities:</p>
             <ul>
@@ -157,15 +176,15 @@
             </ul>
             <p>As a community, we have come a long way, and yet we have a long way yet to go. We cannot and we will not be deterred.</p>
           </div>
-          <iframe  src="https://www.youtube.com/embed/Pc-tiysiSS0?start=130" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <iframe  src="https://www.youtube.com/embed/Pc-tiysiSS0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
     </div>
 
     <div class="ending">
-      <h1 class="title">Learn More and Stay Connected</h1>
+      <h1 class="title fade">Learn More and Stay Connected</h1>
 
-      <div class="container">
+      <div class="container fade">
         <div class="quote">
           <span>❝</span>
           <div class="quotes">
@@ -175,18 +194,20 @@
           </div>
         </div>
 
-        <div class="flex-container">
+        <div class="flex-container fade">
           <button class="full-report" type="button" name="button"><i class="fas fa-arrow-left left"></i> View Full DEI Progress Report  </button>
           <button class="email" type="button" name="button"> Join Email List<i class="fas fa-arrow-right right"></i></button>
         </div>
       </div>
     </div>
 
-    <h1 class="title end-quote"><i>Diversity. Equity. Inclusion. It Takes All of Us.</i></h1>
     <script type="text/javascript" src="./js/section5.js"></script>
     <script type="text/javascript" src="./js/section7-story.js"></script>
+    <script type="text/javascript" src="./js/section6-counting.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
   </body>
   <footer>
+    <h1 class="title end-quote"><i>Diversity. Equity. Inclusion. It Takes All of Us.</i></h1>
     <img src="./images/DEI_Logo.png" alt="DEI logo">
   </footer>
 </html>

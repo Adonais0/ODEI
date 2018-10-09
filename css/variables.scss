@@ -34,15 +34,30 @@
 // $light-blue: #2e99b0;
 
 /* new theme */
-$theme-color: #d98139;
-$secondary-color: #d98139;
+// $theme-color: #d98139;
+// $secondary-color: #d98139;
+// $text-color: #dfdfdf;
+// $secondary-text-color: #1e1548;
+// $highlight-color: #fcd77f;
+// $background-color: #1e1548;
+// $overlay: rgba(1,62,120,0.8);
+// $white-overlay: rgba(255,255,255,0.8);
+// $card-color: #d98139;
+// $light-blue: #2e99b0;
+
+
+/* UM theme */
+// blue : #063262
+// yellow: #ffcb09
+$theme-color: #ffcb09;
+$secondary-color: #ffcb09;
 $text-color: #dfdfdf;
-$secondary-text-color: #1e1548;
-$highlight-color: #fcd77f;
-$background-color: #1e1548;
-$overlay: rgba(30,21,72,0.8);
+$secondary-text-color: #063262;
+$highlight-color: #ffcb09;
+$background-color: #063262;
+$overlay: rgba(1,62,120,0.8);
 $white-overlay: rgba(255,255,255,0.8);
-$card-color: #d98139;
+$card-color: #2e99b0;
 $light-blue: #2e99b0;
 
 // font
@@ -50,6 +65,7 @@ $large-title: 5em;
 $middle-title: 3em;
 $small-title: 2em;
 $text-content: 1em;
+$text-mobile: 0.8em;
 
 // interval
 $spacer-large: 10em;

@@ -21,6 +21,7 @@
     }
 
     .quotes {
+      color: $secondary-text-color;
       font-style: italic;
       font-size: 1.2em;
       font-weight: 200;
@@ -31,9 +32,6 @@
         font-size: $text-content;
         margin-top: $spacer-middle;
         font-weight: 200;
-      }
-
-      .mark {
       }
     }
 
@@ -48,4 +46,39 @@
       width: 60%;
     }
   }
+}
+
+@media screen and (max-width: 600px) {
+    .section-2 {
+      width: 80%;
+      margin-top: $spacer-small;
+
+      .section-2-content {
+        flex-direction: column;
+
+        img {
+          height: 240px;
+        }
+        span {
+          display: none;
+        }
+        .quotes {
+          background-color: $card-color;
+          box-shadow: 5px 5px 20px rgba(0,0,0,0.9);
+          font-size: $text-mobile;
+
+          .quote-content {
+            transform: none;
+            margin: 0;
+            padding: 1em;
+
+          }
+
+        }
+
+        &::before {
+          display: none;
+        }
+      }
+    }
 }
