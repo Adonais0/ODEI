@@ -19,7 +19,8 @@
     background-color: $overlay;
 
     img {
-      max-width: 200px;
+      height: 100%;
+      width: auto;
     }
 
     .content-container {
