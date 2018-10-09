@@ -291,40 +291,40 @@ footer img {
   padding: 0;
 }
 
-.scroll-wrapper {
+.scroll-window {
   height: 500px;
   width: 100%;
   position: relative;
-  overflow: visible;
-  transform: translate3d(0, 0, 0);
+  overflow: hidden;
 }
-.scroll-wrapper #scroll-container {
+.scroll-window #scroll-container {
   height: 100%;
-  width: 3840px;
+  width: 4800px;
   position: absolute;
   left: 0;
   transform: translate3d(0, 0, 0);
   display: flex;
+  justify-content: flex-start;
+  animation: moveSlideshow 26s linear infinite;
 }
-.scroll-wrapper #scroll-container .group-0, .scroll-wrapper #scroll-container .group-1, .scroll-wrapper #scroll-container .group-2 {
+.scroll-window #scroll-container .group-0, .scroll-window #scroll-container .group-1, .scroll-window #scroll-container .group-2, .scroll-window #scroll-container .group-3, .scroll-window #scroll-container .group-4 {
   height: 120%;
+  width: fit-content;
 }
-.scroll-wrapper #scroll-container .group-0 .subgroup-0, .scroll-wrapper #scroll-container .group-0 .subgroup-1, .scroll-wrapper #scroll-container .group-0 .subgroup-2, .scroll-wrapper #scroll-container .group-1 .subgroup-0, .scroll-wrapper #scroll-container .group-1 .subgroup-1, .scroll-wrapper #scroll-container .group-1 .subgroup-2, .scroll-wrapper #scroll-container .group-2 .subgroup-0, .scroll-wrapper #scroll-container .group-2 .subgroup-1, .scroll-wrapper #scroll-container .group-2 .subgroup-2 {
+.scroll-window #scroll-container .group-0 .subgroup-0, .scroll-window #scroll-container .group-0 .subgroup-1, .scroll-window #scroll-container .group-0 .subgroup-2, .scroll-window #scroll-container .group-1 .subgroup-0, .scroll-window #scroll-container .group-1 .subgroup-1, .scroll-window #scroll-container .group-1 .subgroup-2, .scroll-window #scroll-container .group-2 .subgroup-0, .scroll-window #scroll-container .group-2 .subgroup-1, .scroll-window #scroll-container .group-2 .subgroup-2, .scroll-window #scroll-container .group-3 .subgroup-0, .scroll-window #scroll-container .group-3 .subgroup-1, .scroll-window #scroll-container .group-3 .subgroup-2, .scroll-window #scroll-container .group-4 .subgroup-0, .scroll-window #scroll-container .group-4 .subgroup-1, .scroll-window #scroll-container .group-4 .subgroup-2 {
   display: flex;
   justify-content: center;
-  width: 120%;
+  width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.scroll-wrapper #scroll-container .group-1 {
-  transform: translateX(120%);
-}
-.scroll-wrapper #scroll-container .group-2 {
-  transform: translateX(240%);
-}
 
 /* keyframes*/
-@keyframes moveSlideshow {}
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-60%);
+  }
+}
 .section-5 {
   height: auto;
   background-image: url("../images/campus.jpg");
@@ -500,7 +500,7 @@ button:hover .left {
   padding-left: 2em;
 }
 .section-6 .content .after-image .legend .implemented {
-  border-left: #ffcb09 50px solid;
+  border-left: #2e99b0 50px solid;
   margin-top: 1em;
   padding-left: 2em;
 }
