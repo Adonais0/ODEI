@@ -118,6 +118,10 @@
     font-size: $text-mobile;
     width: 100%;
 
+    img {
+      width: 80%;
+    }
+
     .title {
       font-size: $small-title;
       margin-bottom: $spacer-small;
@@ -132,10 +136,6 @@
 
       .desktop {
         display: none;
-      }
-
-      .bar-chart {
-        width: 80%;
       }
 
       .prev-image {
