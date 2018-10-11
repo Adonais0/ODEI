@@ -26,6 +26,10 @@
     height: inherit;
     display: flex;
 
+    .desktop {
+      display: block;
+    }
+
     .prev-image {
       margin-top: $spacer-small;
 
@@ -130,23 +134,27 @@
         display: none;
       }
 
-        .prev-image {
-          display: inline-block;
-          margin: 0 auto;
-          height: 80px;
-          background-color: $card-color;
+      .bar-chart {
+        width: 80%;
+      }
 
-          .number-1 {
-            width: 150px;
-            position: relative;
-            background-color: transparent;
+      .prev-image {
+        display: inline-block;
+        margin: 0 auto;
+        height: 80px;
+        background-color: $card-color;
 
-            .description {
-              transform: none;
-              bottom: -10px;
-            }
+        .number-1 {
+          width: 150px;
+          position: relative;
+          background-color: transparent;
+
+          .description {
+            transform: none;
+            bottom: -10px;
           }
         }
+      }
 
         .after-image {
           margin: 1em auto;

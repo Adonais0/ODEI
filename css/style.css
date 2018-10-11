@@ -474,6 +474,9 @@ button:hover .left {
   height: inherit;
   display: flex;
 }
+.section-6 .content .desktop {
+  display: block;
+}
 .section-6 .content .prev-image {
   margin-top: 2em;
 }
@@ -560,6 +563,9 @@ button:hover .left {
   }
   .section-6 .content .desktop {
     display: none;
+  }
+  .section-6 .content .bar-chart {
+    width: 80%;
   }
   .section-6 .content .prev-image {
     display: inline-block;
