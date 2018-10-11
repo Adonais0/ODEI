@@ -5,7 +5,14 @@
   background-image: url('../images/campus.jpg');
   background-position: center;
   background-size: cover;
+
   .content {
+    text-align: center;
+    padding: $spacer-middle 0;
+    width: 100%;
+    margin: 0 auto;
+    height: 60%;
+    overflow: visible;
 
     h1 {
       margin: 0;
@@ -17,14 +24,6 @@
       margin: 0 auto;
       display: block;
     }
-
-
-    text-align: center;
-    padding: $spacer-middle 0;
-    width: 100%;
-    margin: 0 auto;
-    height: 60%;
-    overflow: visible;
 
     .units {
       padding: $spacer-small 0;
@@ -98,8 +97,11 @@ button {
   .section-5 {
     font-size: $text-mobile;
 
-    h1 {
-      font-size: $small-title;
+    .content {
+      h1 {
+        font-size: $mobile-title;
+        width: 100%;
+      }
     }
   }
 }

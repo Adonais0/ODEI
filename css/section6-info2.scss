@@ -116,17 +116,64 @@
 
     .title {
       font-size: $small-title;
+      margin-bottom: $spacer-small;
     }
 
-    .mobile {
-      display: block;
-      width: 100%;
-      img {
-        width: 100%;
-      }
-    }
     .content {
-      display: none;
+      flex-direction: column;
+
+      .mobile {
+        display: inline-block;
+      }
+
+      .desktop {
+        display: none;
+      }
+
+        .prev-image {
+          display: inline-block;
+          margin: 0 auto;
+          height: 80px;
+          background-color: $card-color;
+
+          .number-1 {
+            width: 150px;
+            position: relative;
+            background-color: transparent;
+
+            .description {
+              transform: none;
+              bottom: -10px;
+            }
+          }
+        }
+
+        .after-image {
+          margin: 1em auto;
+          padding-top: 0;
+
+          .number-2 {
+
+            .counting {
+              display: inline-block;
+            }
+            .description {
+              position: relative;
+            }
+          }
+
+          .legend {
+            height: auto;
+
+            .in-progress {
+              padding-left: 0.6em;
+            }
+
+            .implemented {
+              padding-left: 0.6em;
+            }
+          }
+        }
     }
   }
 }

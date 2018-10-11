@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
-/* orange & blue */
-/* light background */
-/* dark background */
-/* new theme */
 /* UM theme */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
@@ -135,11 +131,28 @@ footer img {
 }
 
 @media screen and (max-width: 600px) {
+  .section-1 {
+    position: relative;
+  }
   .section-1 .header-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
+    height: auto;
   }
   .section-1 .header-content img {
     display: none;
+  }
+  .section-1 .header-content .content-container {
+    padding: 0;
+  }
+  .section-1 .header-content .content-container .maintitle {
+    font-size: 1.5em;
+  }
+  .section-1 .header-content .content-container .subtitle {
+    font-size: 1.1em;
   }
 }
 .section-2 {
@@ -195,12 +208,14 @@ footer img {
     flex-direction: column;
   }
   .section-2 .section-2-content img {
+    margin-top: 2em;
     height: 240px;
   }
   .section-2 .section-2-content span {
     display: none;
   }
   .section-2 .section-2-content .quotes {
+    padding: 2em;
     background-color: #2e99b0;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
     font-size: 0.8em;
@@ -208,7 +223,9 @@ footer img {
   .section-2 .section-2-content .quotes .quote-content {
     transform: none;
     margin: 0;
-    padding: 1em;
+  }
+  .section-2 .section-2-content .quotes .mark {
+    float: right;
   }
   .section-2 .section-2-content::before {
     display: none;
@@ -290,7 +307,13 @@ footer img {
     margin-top: 2em;
   }
   .section-4 .intro .intro-content {
-    height: 60%;
+    padding: 0 1em;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+  }
+  .section-4 .section-3-info-1 .title {
+    font-size: 1.8em;
   }
 }
 * {
@@ -420,8 +443,9 @@ button:hover .left {
   .section-5 {
     font-size: 0.8em;
   }
-  .section-5 h1 {
-    font-size: 2em;
+  .section-5 .content h1 {
+    font-size: 1.8em;
+    width: 100%;
   }
 }
 .section-6 {
@@ -526,16 +550,50 @@ button:hover .left {
   }
   .section-6 .title {
     font-size: 2em;
-  }
-  .section-6 .mobile {
-    display: block;
-    width: 100%;
-  }
-  .section-6 .mobile img {
-    width: 100%;
+    margin-bottom: 2em;
   }
   .section-6 .content {
+    flex-direction: column;
+  }
+  .section-6 .content .mobile {
+    display: inline-block;
+  }
+  .section-6 .content .desktop {
     display: none;
+  }
+  .section-6 .content .prev-image {
+    display: inline-block;
+    margin: 0 auto;
+    height: 80px;
+    background-color: #2e99b0;
+  }
+  .section-6 .content .prev-image .number-1 {
+    width: 150px;
+    position: relative;
+    background-color: transparent;
+  }
+  .section-6 .content .prev-image .number-1 .description {
+    transform: none;
+    bottom: -10px;
+  }
+  .section-6 .content .after-image {
+    margin: 1em auto;
+    padding-top: 0;
+  }
+  .section-6 .content .after-image .number-2 .counting {
+    display: inline-block;
+  }
+  .section-6 .content .after-image .number-2 .description {
+    position: relative;
+  }
+  .section-6 .content .after-image .legend {
+    height: auto;
+  }
+  .section-6 .content .after-image .legend .in-progress {
+    padding-left: 0.6em;
+  }
+  .section-6 .content .after-image .legend .implemented {
+    padding-left: 0.6em;
   }
 }
 .section-7 {

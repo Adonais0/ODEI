@@ -59,7 +59,16 @@
       margin-top: $spacer-small;
 
       .intro-content {
-        height: 60%;
+        padding: 0 1em;
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+      }
+    }
+
+    .section-3-info-1 {
+      .title {
+        font-size: $mobile-title;
       }
     }
   }

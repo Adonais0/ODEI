@@ -57,12 +57,14 @@
         flex-direction: column;
 
         img {
+          margin-top: 2em;
           height: 240px;
         }
         span {
           display: none;
         }
         .quotes {
+          padding: 2em;
           background-color: $card-color;
           box-shadow: 5px 5px 20px rgba(0,0,0,0.9);
           font-size: $text-mobile;
@@ -70,8 +72,10 @@
           .quote-content {
             transform: none;
             margin: 0;
-            padding: 1em;
+          }
 
+          .mark {
+            float: right;
           }
 
         }

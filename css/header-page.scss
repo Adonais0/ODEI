@@ -53,10 +53,28 @@
 @media screen and (max-width: 600px) {
 
     .section-1 {
+      position: relative;
+
       .header-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
         width: 100%;
+        height: auto;
         img {
           display: none;
+        }
+
+        .content-container {
+          padding: 0;
+          .maintitle {
+            font-size: 1.5em;
+          }
+
+          .subtitle {
+            font-size: 1.1em;
+          }
         }
       }
     }
