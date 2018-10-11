@@ -66,8 +66,11 @@ footer {
   padding: 2em 0;
   background-color: #063262;
 }
+footer .end-quote {
+  padding-top: 0;
+  color: #dfdfdf;
+}
 footer img {
-  margin-top: 2em;
   width: 100px;
   display: block;
   margin: 0 auto;
@@ -78,8 +81,11 @@ footer img {
     font-size: 2em;
     padding: 0 1em;
   }
-  footer img {
+  footer a {
     margin-top: 5em;
+  }
+  footer a:hover {
+    cursor: pointer;
   }
 }
 .section-1 {
@@ -828,14 +834,6 @@ button:hover .left {
 }
 .ending .container .quote .quotes .mark {
   float: right;
-}
-
-.end-quote {
-  height: 100px;
-  background-color: #063262;
-  padding-top: 2em;
-  color: #dfdfdf;
-  margin: 0;
 }
 
 @media screen and (max-width: 600px) {

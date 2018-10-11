@@ -59,8 +59,13 @@ body, html {
 footer {
   padding: $spacer-small 0;
   background-color: $background-color;
+
+  .end-quote {
+    padding-top: 0;
+    color: $text-color;
+  }
+
   img {
-    margin-top: $spacer-small;
     width: 100px;
     display: block;
     margin: 0 auto;
@@ -73,8 +78,13 @@ footer {
       font-size: $small-title;
       padding: 0 1em;
       }
-    img {
+
+    a {
       margin-top: $spacer-middle;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }
